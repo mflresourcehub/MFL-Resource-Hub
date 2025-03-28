@@ -134,6 +134,7 @@ body {
 
 /* Section Heading */
 .section1 h2 {
+    text-align: center;
     font-size: 1.5em;
     margin-top: 20px;
     margin-left: 1%;
@@ -145,7 +146,7 @@ body {
 /* Section Content */
 .section1 p {
     font-size: 1.2em; /* Apply this font-size */
-    text-align: justify;
+    text-align: center;
     margin-left: 1%;
     font-family: 'Winky Sans', sans-serif;
 }
@@ -165,4 +166,107 @@ a {
 a:hover {
     color: rgb(255, 255, 255); /* Change link color */
     text-decoration: underline; /* Underline link on hover */
+}
+
+/* FYI - use this to change section background colour and section border line */
+.section2 {
+    background-color: #f87ae3;
+    padding: 10px;
+    border-bottom: 3px solid black; /* Adds a 3px solid black border at the bottom */
+}
+
+/* Section Heading */
+.section2 h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 1.5%;
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #000000;
+    font-family: 'Winky Sans', sans-serif;
+}
+
+/* Section Content */
+.section2 p {
+    font-size: 1.2em; /* Apply this font-size */
+    text-align: center;
+    margin-left: 1.5%;
+    margin-bottom: 30px; /* Add space below the heading */
+    font-family: 'Winky Sans', sans-serif;
+}
+
+.columns {
+    margin-left: 1.5%;
+    margin-right: 5%;
+}
+
+/* Columns Layout */
+.columns {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap onto the next line */
+    justify-content: center; /* Center-align the columns */
+    gap: 20px; /* Add space between columns */
+    max-width: 1200px; /* Limit max width to keep it from stretching too wide */
+    margin: 0 auto; /* Center the columns container on the page */
+}
+
+/* Each Column Styling */
+.column {
+    text-decoration: none; /* Remove underline on links */
+    width: 30%; /* Adjust to 30% width for three columns in a row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+/* Column Content Styling */
+.column-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #eaf0ee;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    margin-bottom: 30px; /* Add space below the paragraph */
+    font-family: 'Winky Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Column Image */
+.column-image {
+    width: 80%; /* Make the image fit well inside the column */
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-top: 20px;           /* Add margin above the image */
+}
+
+/* Hover Effect for Columns */
+.column:hover .column-content {
+    transform: translateY(-5px); /* Move the column up slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Add more shadow when hovered */
+}
+
+/* Column Title */
+.column h3 {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.column-image {
+    width: 100px;  /* Adjust the width to 50px */
+    height: 100px; /* Adjust the height to 50px */
+    margin-top: 20px;           /* Add margin above the image */
+    object-fit: cover; /* Optional: Ensures the image fills the box while maintaining aspect ratio */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .column {
+        width: 48%; /* Two columns per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        width: 100%; /* One column per row on very small screens */
+    }
 }
