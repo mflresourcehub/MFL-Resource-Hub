@@ -86,7 +86,7 @@ nav ul li a {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(241, 245, 244); /* White background for dropdown */
+    background-color: rgb(255, 255, 255); /* White background for dropdown */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -94,6 +94,7 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for dropdown */
     border-radius: 5px;
     border: 2px solid black; /* Black border added */
+    z-index: 9999; /* Ensures the dropdown is on top of other content */
 }
 
 .dropdown-menu li {
@@ -437,7 +438,7 @@ a:hover {
 .footer {
     background-color: #c1eca4;
     padding: 10px;
-    font-size: 1.2em; /* Apply this font-size */
+    font-size: 1.1em; /* Apply this font-size */
     text-align: center;
     font-family: 'Winky Sans', sans-serif;
 }
@@ -447,7 +448,7 @@ a:hover {
     background-color: rgb(243, 148, 243); /* Green background color */
     color: rgb(7, 4, 7);              /* White text color */
     padding: 15px 32px;        /* Vertical and horizontal padding */
-    font-size: 22px;           /* Font size of the button text */
+    font-size: 1.1em; /* Apply this font-size */
     font-family: 'Winky Sans', sans-serif; /* Change the font here */
     border: 2px solid black;              /* Remove the border */
     border-radius: 5px;        /* Rounded corners */
