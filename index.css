@@ -437,7 +437,6 @@ a:hover {
 .footer {
     background-color: #c1eca4;
     padding: 10px;
-    border-bottom: 3px solid black; /* Adds a 3px solid black border at the bottom */
     font-size: 1.2em; /* Apply this font-size */
     text-align: center;
     font-family: 'Winky Sans', sans-serif;
