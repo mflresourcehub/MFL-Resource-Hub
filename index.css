@@ -221,7 +221,7 @@ a:hover {
 .column-content {
     text-align: center;
     padding: 20px;
-    background-color: #eaf0ee;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
     margin-bottom: 30px; /* Add space below the paragraph */
@@ -269,4 +269,31 @@ a:hover {
     .column {
         width: 100%; /* One column per row on very small screens */
     }
+}
+
+/* FYI - use this to change section background colour and section border line */
+.section3 {
+    background-color: #61dff0;
+    padding: 10px;
+    border-bottom: 3px solid black; /* Adds a 3px solid black border at the bottom */
+}
+
+/* Section Heading */
+.section3 h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 1.5%;
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #000000;
+    font-family: 'Winky Sans', sans-serif;
+}
+
+/* Section Content */
+.section3 p {
+    font-size: 1.2em; /* Apply this font-size */
+    text-align: center;
+    margin-left: 1.5%;
+    margin-bottom: 30px; /* Add space below the heading */
+    font-family: 'Winky Sans', sans-serif;
 }
