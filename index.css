@@ -33,6 +33,7 @@ header h1 {
     color: rgb(12, 7, 7); /* White text color */
 }
 
+/* Navigation Bar */
 nav ul {
     list-style: none;
     padding: 0;
@@ -118,17 +119,20 @@ nav ul li a:hover, .dropdown-menu li a:hover {
     color: #e9259e; /* Changes text color on hover */
 }
 
+/* FYI - maintain this to make sure no margins round the outside of the webpage */
 body {
     margin: 0;
     padding: 0; /* optional: to also remove padding */
 }
 
+/* FYI - use this to change section background colour and section border line */
 .section1 {
     background-color: #eeddaf;
     padding: 10px;
     border-bottom: 3px solid black; /* Adds a 3px solid black border at the bottom */
 }
 
+/* Section Heading */
 .section1 h2 {
     font-size: 1.5em;
     margin-top: 20px;
@@ -138,6 +142,7 @@ body {
     font-family: 'Winky Sans', sans-serif;
 }
 
+/* Section Content */
 .section1 p {
     font-size: 1.2em; /* Apply this font-size */
     text-align: justify;
@@ -145,7 +150,19 @@ body {
     font-family: 'Winky Sans', sans-serif;
 }
 
+/* Section Alignment (Heading & Content) */
 .welcome-message {
     margin-left: 1%;
     margin-right: 5%;
+}
+
+/* In-Text Web Link Formatting */
+a {
+    color: rgb(255, 0, 0); /* Change link color */
+    text-decoration: underline; /* Remove underline */
+}
+
+a:hover {
+    color: rgb(255, 255, 255); /* Change link color */
+    text-decoration: underline; /* Underline link on hover */
 }
