@@ -1,0 +1,269 @@
+.home-button {
+    position: absolute; /* Position the button relative to the header */
+    top: 40px; /* Adjust the button's distance from the top */
+    left: 40px; /* Adjust the button's distance from the left edge */
+    z-index: 1000; /* Ensure the button is on top of other content */
+}
+
+.homepage-button {
+    width: 60px; /* Set the size to be smaller */
+    height: 60px; /* Maintain the aspect ratio */
+}
+
+header .banner h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+header .banner p {
+    font-size: 18px;
+}
+
+/* Header Styling - Font and Background Colour */
+header {
+    background: linear-gradient(to right, #f3cd66, #5df0f0, #71f075); /* Multi-colored gradient */
+    text-align: center;
+    padding: 50px;
+    border-bottom: 5px solid #000000; /* Black border at the bottom */
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Winky Sans', sans-serif;
+    color: rgb(12, 7, 7); /* White text color */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Winky Sans', sans-serif;
+    font-size:medium
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(24, 14, 14);
+    font-weight: bold;
+}
+
+nav {
+    text-align: center; /* Center-align the navigation */
+    padding: 10px 0; /* Add some padding above and below */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Makes the menu items display in a single row */
+    justify-content: center; /* Center align the items */
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px; /* Add spacing between menu items */
+}
+
+nav ul li a {
+    display: block;
+    color: black; /* Ensures text remains visible */
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255); /* White background for dropdown */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for dropdown */
+    border-radius: 5px;
+    border: 2px solid black; /* Black border added */
+    z-index: 9999; /* Ensures the dropdown is on top of other content */
+}
+
+.dropdown-menu li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black; /* Line between each option */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hover Effects */
+nav ul li a:hover, .dropdown-menu li a:hover {
+    color: #e9259e; /* Changes text color on hover */
+}
+
+/* FYI - maintain this to make sure no margins round the outside of the webpage */
+body {
+    margin: 0;
+    padding: 0; /* optional: to also remove padding */
+    font-family: 'Winky Sans', sans-serif;
+    text-align: center;
+    background-color: #66d1d4;
+}
+
+.tile-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusts space between tiles */
+    gap: 10px; /* Increased gap between tiles (double the current space) */
+}
+
+.tile {
+    background-color: #f5f5f5;
+    font-family: 'Winky Sans', sans-serif;
+    color: #070508; /* Change this to your preferred color */
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    width:20%; /* Increase width to 48% (double if it was originally 24%) */
+    padding: 10px; /* Increase padding */
+    box-sizing: border-box; /* Ensures padding doesn't overflow the tile */
+    margin: 0; /* Remove any default margins */
+    height: 200px; /* Allow height to adjust based on content */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    display: flex;
+    flex-direction: column; /* Align the children vertically */
+
+    /* Coming Soon Banner */
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(228, 179, 107, 0.6); /* Dark transparent overlay */
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    pointer-events: none; /* Prevents clicking */
+}
+
+.overlay span {
+    background: rgba(0, 0, 0, 1); /* Black background behind text with 70% opacity */
+    color: #ffffff; /* White text */
+    padding: 10px 15px; /* Padding around text */
+    border-radius: 3px; /* Rounded corners for text background */
+    text-transform: uppercase;
+}
+
+.coming-soon {
+    pointer-events: none; /* Prevent clicks on the entire tile */
+}
+
+.tile img {
+    width: 70px; /* Small icon size */
+    height: 70px;
+    object-fit: contain; /* Ensure the full icon is visible */
+    border-radius: 8px; /* Optional: Rounded corners */
+    display: block;
+    margin: 0 auto 10px; /* Center the icon above the title */
+}
+
+.tile h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tile-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .tile-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .tile-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for very small screens */
+    }
+}
+
+/* FYI - use this to change section background colour and section border line */
+.footer {
+    background-color: #c1eca4;
+    font-size: 1.1em; /* Apply this font-size */
+    text-align: center;
+    font-family: 'Winky Sans', sans-serif;
+    border-top: 2px solid black; /* Adds a 3px solid black border at the bottom */
+}
+
+/* Basic Button Styling */
+.my-button {
+    background-color: rgb(243, 148, 243); /* Green background color */
+    color: rgb(7, 4, 7);              /* White text color */
+    padding: 15px 32px;        /* Vertical and horizontal padding */
+    font-size: 1.1em;           /* Font size of the button text */
+    font-family: 'Winky Sans', sans-serif; /* Change the font here */
+    border: 2px solid black;              /* Remove the border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    text-align: center;        /* Center-align text */
+    text-decoration: none;     /* Remove text decoration */
+    display: inline-block;     /* Keep it inline-block for layout */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin-bottom: 30px;
+}
+
+/* Button Hover Effect */
+.my-button:hover {
+    background-color: #f1f3f1; /* Slightly darker green on hover */
+}
+
+/* Link Styling */
+.my-button-link {
+    text-decoration: none; /* Remove underline from link */
+}
