@@ -1,0 +1,317 @@
+.home-button {
+    position: absolute; /* Position the button relative to the header */
+    top: 40px; /* Adjust the button's distance from the top */
+    left: 40px; /* Adjust the button's distance from the left edge */
+    z-index: 1000; /* Ensure the button is on top of other content */
+}
+
+.homepage-button {
+    width: 60px; /* Set the size to be smaller */
+    height: 60px; /* Maintain the aspect ratio */
+}
+
+header .banner h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+header .banner p {
+    font-size: 18px;
+}
+
+/* Header Styling - Font and Background Colour */
+header {
+    background: linear-gradient(to right, #f3cd66, #5df0f0, #71f075); /* Multi-colored gradient */
+    text-align: center;
+    padding: 50px;
+    border-bottom: 5px solid #000000; /* Black border at the bottom */
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Winky Sans', sans-serif;
+    color: rgb(12, 7, 7); /* White text color */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Winky Sans', sans-serif;
+    font-size:medium
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(24, 14, 14);
+    font-weight: bold;
+}
+
+nav {
+    text-align: center; /* Center-align the navigation */
+    padding: 10px 0; /* Add some padding above and below */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Makes the menu items display in a single row */
+    justify-content: center; /* Center align the items */
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px; /* Add spacing between menu items */
+}
+
+nav ul li a {
+    display: block;
+    color: black; /* Ensures text remains visible */
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255); /* White background for dropdown */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for dropdown */
+    border-radius: 5px;
+    border: 2px solid black; /* Black border added */
+    z-index: 9999; /* Ensures the dropdown is on top of other content */
+}
+
+.dropdown-menu li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black; /* Line between each option */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hover Effects */
+nav ul li a:hover, .dropdown-menu li a:hover {
+    color: #e9259e; /* Changes text color on hover */
+}
+
+/* FYI - maintain this to make sure no margins round the outside of the webpage */
+body {
+    margin: 0;
+    padding: 0; /* optional: to also remove padding */
+}
+
+/* FYI - use this to change section background colour and section border line */
+.section1 {
+    background-color: #8de9e9;
+    padding: 10px;
+}
+
+/* Section Heading */
+.section1 h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #000000;
+    font-family: 'Winky Sans', sans-serif;
+}
+
+/* Section Content */
+.section1 p {
+    font-size: 1.2em; /* Apply this font-size */
+    text-align: center;
+    margin-left: 1%;
+    font-family: 'Winky Sans', sans-serif;
+}
+
+/* Section Alignment (Heading & Content) */
+.welcome-message {
+    margin-left: 1%;
+    margin-right: 5%;
+}
+
+/* Section 2 - Filter Resources */
+.filter-resources {
+    background-color: #8de9e9;
+    font-family: 'Winky Sans', sans-serif;
+    text-align: center;
+}
+
+/* Style for the filter bar */
+.filter-bar {
+    display: flex;
+    justify-content: center; /* Centers the buttons */
+    gap: 20px; /* Adds space between the buttons */
+    padding: 10px;
+    background-color: transparent; /* Removes the background color */
+}
+
+/* Common style for all dropdowns */
+.dropdown-filters {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button style */
+.dropdown-filters-btn {
+    background-color: #f8fa6e;
+    color: rgb(12, 7, 7);  /* Dark text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Winky Sans', sans-serif;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    border: 2px solid black; /* Black border for the dropdown */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when hovering over the button */
+.dropdown-filters:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the button on hover */
+.dropdown-filters-btn:hover {
+    background-color: #fcfcfa;
+}
+
+.resources {
+    font-family: 'Winky Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8de9e9;
+    text-align: center;  /* Centers the content horizontally */
+}
+.resources-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Ensures one resource per row */
+    gap: 20px;
+    padding: 20px;
+    width:auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;  /* Centers vertically */
+    justify-content: center;  /* Centers horizontally */
+}
+.resource {
+    position: relative;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;  /* Centers vertically */
+}
+
+.resource:hover {
+    transform: scale(1.05);
+}
+.resource img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.resource:hover img {
+    transform: scale(1.1);
+}
+.tags {
+    margin-top: 10px;
+}
+.tag {
+    display: inline-block;
+    background: #f0bb2b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+/* FYI - use this to change section background colour and section border line */
+.footer {
+    background-color: #c1eca4;
+    font-size: 1.1em; /* Apply this font-size */
+    text-align: center;
+    font-family: 'Winky Sans', sans-serif;
+    border-top: 1px solid black;
+}
+
+/* Basic Button Styling */
+.my-button {
+    background-color: rgb(243, 148, 243); /* Green background color */
+    color: rgb(7, 4, 7);              /* White text color */
+    padding: 15px 32px;        /* Vertical and horizontal padding */
+    font-size: 1.1em; /* Apply this font-size */
+    font-family: 'Winky Sans', sans-serif; /* Change the font here */
+    border: 2px solid black;              /* Remove the border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    text-align: center;        /* Center-align text */
+    text-decoration: none;     /* Remove text decoration */
+    display: inline-block;     /* Keep it inline-block for layout */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin-bottom: 30px;
+}
+
+/* Button Hover Effect */
+.my-button:hover {
+    background-color: #f1f3f1; /* Slightly darker green on hover */
+}
+
+/* Link Styling */
+.my-button-link {
+    text-decoration: none; /* Remove underline from link */
+}
