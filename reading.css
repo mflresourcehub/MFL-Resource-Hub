@@ -1,0 +1,121 @@
+.home-button {
+    position: absolute; /* Position the button relative to the header */
+    top: 40px; /* Adjust the button's distance from the top */
+    left: 40px; /* Adjust the button's distance from the left edge */
+    z-index: 1000; /* Ensure the button is on top of other content */
+}
+
+.homepage-button {
+    width: 60px; /* Set the size to be smaller */
+    height: 60px; /* Maintain the aspect ratio */
+}
+
+header .banner h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+header .banner p {
+    font-size: 18px;
+}
+
+/* Header Styling - Font and Background Colour */
+header {
+    background-color: #c1eca4;
+    text-align: center;
+    padding: 50px;
+    border-bottom: 5px solid #000000; /* Black border at the bottom */
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Winky Sans', sans-serif;
+    color: rgb(12, 7, 7); /* White text color */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Winky Sans', sans-serif;
+    font-size:medium
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(24, 14, 14);
+    font-weight: bold;
+}
+
+nav {
+    text-align: center; /* Center-align the navigation */
+    padding: 10px 0; /* Add some padding above and below */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Makes the menu items display in a single row */
+    justify-content: center; /* Center align the items */
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px; /* Add spacing between menu items */
+}
+
+nav ul li a {
+    display: block;
+    color: black; /* Ensures text remains visible */
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255); /* White background for dropdown */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for dropdown */
+    border-radius: 5px;
+    border: 2px solid black; /* Black border added */
+    z-index: 9999; /* Ensures the dropdown is on top of other content */
+}
+
+.dropdown-menu li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black; /* Line between each option */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hover Effects */
+nav ul li a:hover, .dropdown-menu li a:hover {
+    color: #e9259e; /* Changes text color on hover */
+}
